@@ -91,6 +91,15 @@
          </html>
 
 
+### SEO
+
+se refere ao uso de elementos e tags HTML para otimizar o conteúdo de uma página para motores de busca, como Google, melhorando seu posicionamento nos resultados orgânicos. Isso é feito através da estruturação correta do código, que ajuda os robôs a entenderem o conteúdo da página, o que, por sua vez, aumenta a probabilidade de um bom ranqueamento. 
+
+### GOOD SEO / BAD SEO
+
+- Good SEO foca em práticas éticas e de qualidade, como conteúdo valioso e experiência do usuário. 
+- Bad SEO usa táticas manipuladoras que violam as diretrizes do Google para resultados rápidos, mas que prejudicam a credibilidade do site a longo prazo. 
+- Em HTML, a diferença está em usar elementos de forma semântica e acessível versus utilizá-los de maneira enganosa. 
 
 ### FLEXBOX
 
