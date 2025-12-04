@@ -205,8 +205,52 @@ Criar layouts complexos em 2 dimensões (linhas E colunas) de forma fácil.
 - EQUIVALENTE ao de cima!
 - Também cria 3 colunas iguais.
 
-#### Resimindo:
+#### Resumindo:
 - Grid = Layout em 2D (linhas E colunas).
 - template-columns = Define quantas colunas.
 - grid-column/row = Posiciona os itens no grid.
 - repeat() = Atalho para colunas repetidas.
+
+### Variáveis e Animações CSS
+
+Formatos:
+
+@keyframes animation-1 {
+      0% {
+        background-color: black;
+      }
+      50% {
+        background-color: green;
+      }
+      100% {
+        background-color: red;
+      }
+}
+
+.animacao {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100%;
+    animation: animation-1 2s forwards; (forwards deixa na última animação)
+
+}.animacao {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100%;
+    animation-name: animation-1;
+    animation-duration: 2s;
+}
+
+.animacao {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 100%;
+    transition: all 2s ease-in-out;
+}
+
+.animacao:hover {
+     background-color: red; (hover muda a cor ao passar o mouse por cima)
+}
