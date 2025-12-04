@@ -1,0 +1,19 @@
+
+
+:root {
+    --cor1: green;
+    --cor2: blue;
+    --cor3: yellow;
+}
+
+.corNumeroUm {
+    color: var(--cor1);
+}
+
+.corNumeroDois {
+    color: var(--cor2);
+}
+
+.corNumeroTres {
+    color: var(--cor3);
+}
