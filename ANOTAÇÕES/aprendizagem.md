@@ -254,3 +254,19 @@ Formatos:
 .animacao:hover {
      background-color: red; (hover muda a cor ao passar o mouse por cima)
 }
+
+### O que são Event Handlers em HTML?
+
+Event handlers são atributos HTML que permitem executar uma ação (geralmente JavaScript) quando algum evento acontece, como:
+
+- clicar
+
+- passar o mouse
+
+- pressionar teclas
+
+- carregar a página
+
+- enviar um formulário
+
+- e muitos outros.

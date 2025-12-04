@@ -1,0 +1,50 @@
+<!--
+O desafio é: criar o mesmo elemento aqui:
+
+const button = document.getElementById('botao_ativacao');
+button.style.color = 'green';
+
+replicar esse elemento assim que eu clicar nele. 
+Quando clicar no botão, replicar o elemento. 
+O elemento que tá em cima só vai replicar e jogar o outro HTML.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function onHover(){
+            const button = document.getElementById('botao_ativacao');
+            button.style.color = 'green';
+        }
+
+        function replicateElement(){
+    const original = document.getElementById('botao_ativacao'); 
+    const clone = document.createElement("button");
+    clone.innerText = original.innerText;
+
+    clone.style.color = original.style.color;
+
+    document.body.appendChild(clone);
+        }
+
+        function addEvents(){
+            const button = document.getElementById('botao_ativacao');
+
+            button.addEventListener('mouseover', onHover);
+
+            button.addEventListener('click', replicateElement);
+        }
+         
+        window.addEventListener('load', addEvents)
+    </script>
+</head>
+<body>
+    <h1>Event Handlers</h1>
+    
+    <button id="botao_ativacao">Ativar Evento</button>
+</body>
+</html>
