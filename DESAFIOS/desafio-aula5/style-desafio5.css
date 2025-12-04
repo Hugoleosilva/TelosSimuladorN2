@@ -2,9 +2,9 @@
 
 :root {
     --fonteTipografia: 'Kanit';
-    --cor1: green;
-    --cor2: blue;
-    --cor3: yellow;
+    --cor1: black;
+    --cor2: black;
+    --cor3: black;
 }
 
 .tipografia {
@@ -13,14 +13,29 @@
 
 .corNumeroUm {
     color: var(--cor1);
+    transition: color 3s ease-in-out;
+}
+
+.corNumeroUm:hover {
+    color: green;
 }
 
 .corNumeroDois {
     color: var(--cor2);
+    transition: color 3s ease-in-out;
+}
+
+.corNumeroDois:hover {
+    color: blue;
 }
 
 .corNumeroTres {
     color: var(--cor3);
+    transition: color 3s ease-in-out;
+}
+
+.corNumeroTres:hover {
+    color: yellow;
 }
 
 .titulo-vermelho {
