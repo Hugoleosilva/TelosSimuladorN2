@@ -270,3 +270,105 @@ Event handlers são atributos HTML que permitem executar uma ação (geralmente 
 - enviar um formulário
 
 - e muitos outros.
+
+### SERVICE WORKER
+
+O que é um Service Worker?
+
+Imagine seu navegador (Chrome, Firefox, etc.) como um restaurante. O Service Worker é como um garçom inteligente e invisível que fica na cozinha (fora da sua página web principal) e atua como um proxy programável entre o seu navegador e a rede (a internet).
+
+Em termos técnicos:
+
+É um script JavaScript que o navegador executa em segundo plano.
+
+Ele não tem acesso direto ao DOM (o conteúdo da sua página HTML).
+
+Seu superpoder principal é interceptar e gerenciar todas as requisições de rede (pedidos de arquivos, imagens, dados, etc.) feitas pela sua página.
+
+Superpoderes e Exemplos (O que ele faz?)
+O Service Worker é a espinha dorsal de muitas funcionalidades modernas, especialmente as de Progressive Web Apps (PWAs).
+
+1. Cache e Funcionalidade Offline
+Este é o uso mais importante. 
+
+O SW permite que você armazene recursos da sua aplicação (HTML, CSS, JavaScript, imagens) no cache do navegador de forma controlada.
+
+Exemplo:
+
+O usuário visita sua aplicação pela primeira vez (Online).
+
+O SW intercepta os pedidos e salva todos os arquivos essenciais no cache.
+
+O usuário fecha a página e, mais tarde, tenta abri-la sem conexão (Offline).
+
+O SW intercepta o pedido, vê que não há rede e, em vez de mostrar a tela de "Sem Internet", ele serve os arquivos salvos do cache.
+
+Resultado: Sua aplicação carrega e funciona mesmo sem internet!
+
+2. Notificações Push
+
+O SW pode receber mensagens do servidor mesmo quando a aplicação não está aberta no navegador, permitindo que ele exiba notificações push para o usuário.
+
+Exemplo: Um aplicativo de notícias pode usar um SW para receber um alerta do servidor sobre uma notícia de última hora e exibir uma notificação na tela do usuário, incentivando-o a abrir a aplicação.
+
+3. Sincronização em Segundo Plano (Background Sync)
+
+Se o usuário estiver offline e tentar enviar um formulário, o Service Worker pode "segurar" esses dados e enviá-los automaticamente ao servidor assim que a conexão for restabelecida.
+
+Exemplo:
+
+O usuário preenche um formulário de feedback no metrô (sem sinal).
+
+O SW armazena os dados localmente.
+
+Quando o usuário sai do metrô e conecta no Wi-Fi, o SW detecta a rede e envia os dados pendentes para o servidor em segundo plano, sem que o usuário precise fazer nada.
+
+
+Como Funciona na Prática?
+
+O ciclo de vida do Service Worker é bem específico e crucial para entender.
+
+
+Estrutura de Código (Simplificada)
+
+1. No seu arquivo principal: main.js ou dentro da tag `<script>` do HTML
+
+```js
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(registration => console.log('SW registrado!'))
+    .catch(error => console.log('Erro no registro:', error));
+}
+```
+
+---
+
+### sw.js (Service Worker)
+
+```js
+// O evento de Instalação (cria o cache inicial)
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open('meu-cache-v1') // Abre um espaço de cache
+      .then((cache) => {
+        return cache.addAll([
+          '/', 
+          '/index.html',
+          '/styles/main.css',
+          '/scripts/app.js'
+        ]);
+      })
+  );
+});
+
+// O evento de Interceptação
+self.addEventListener('fetch', (event) => {
+  event.respondWith(
+    caches.match(event.request)
+      .then((response) => {
+        return response || fetch(event.request);
+      })
+  );
+});
+```
+
