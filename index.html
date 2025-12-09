@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Site</title>
+    
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            margin: 0;
+        }
+        .tudo {
+            width: 1000px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        #topo {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .texto-ruim {
+            color: #d1d1d1;
+        }
+        .botoes {
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tudo">
+        <div id="topo">
+            <big><h1>Bem-vindo à Empresa XPTO</h1></big>
+            <p>Soluções digitais desde 2000</p>
+        </div>
+
+        <div style="padding: 40px; text-align: center;">
+            <h2>Nossos Serviços</h2>
+            <p class="texto-ruim">Este texto tem um contraste muito baixo e é difícil de ler.</p>
+            
+            <img src="https://via.placeholder.com/300" width="300" />
+            
+            <br><br>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <div class="botoes">
+            <button id="meuBotao" style="padding: 20px; background: red; color: white;" onclick="avisar()">
+                CLIQUE AQUI
+            </button>
+        </div>
+
+        <div id="rodape" style="background: #333; color: white; padding: 10px; text-align: center;">
+            <p>XPTO - Todos os direitos reservados</p>
+        </div>
+    </div>
+
+    <script>
+        function avisar() {
+            alert("Você clicou no botão!");
+        }
+    </script>
+
+</body>
+</html>
