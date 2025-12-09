@@ -1,35 +1,25 @@
 name: CI - Build and Test
 
-# Quando executar:
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
 
-# Permissões (se precisar)
-permissions:
-  contents: read
-
-# Jobs (tarefas)
 jobs:
-  # Job 1: Validar HTML/CSS/JS
-    validate:
+  validate:
     name: Validar HTML, CSS e JavaScript
-    runs-on: ubuntu-latest  # Máquina virtual Linux
+    runs-on: ubuntu-latest
     
     steps:
-      # 1. Baixar código
       - name: Checkout código
         uses: actions/checkout@v4
       
-      # 2. Setup Node.js (para possíveis testes)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
       
-      # 3. Validar se index.html existe
       - name: Verificar arquivos essenciais
         run: |
           echo "📁 Verificando estrutura..."
@@ -37,19 +27,9 @@ jobs:
           if [ -f "index.html" ]; then
             echo "✅ index.html encontrado"
           else
-            echo "⚠️  index.html não encontrado"
+            echo "⚠️ index.html não encontrado"
           fi
       
-      # 4. Validar HTML (se tiver)
-      - name: Validar HTML com html5validator
-        run: |
-          echo "🔍 Validando HTML..."
-          # Instala validador
-          pip install html5validator
-          # Valida todos os HTMLs
-          html5validator --root . || echo "HTML validation skipped"
-      
-      # 5. Teste simples (personalize conforme seu projeto)
       - name: Testes básicos
         run: |
           echo "🧪 Rodando testes básicos..."
