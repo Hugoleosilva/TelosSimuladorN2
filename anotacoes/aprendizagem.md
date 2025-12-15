@@ -371,3 +371,41 @@ self.addEventListener('fetch', (event) => {
 ## REM ou PX?
 
 Use **rem** para escalabilidade e acessibilidade (fontes, espaçamentos) e **px** para controle absoluto (bordas finas, imagens fixas), sendo **rem** preferível para design responsivo, pois se adapta ao tamanho da fonte raiz do navegador, enquanto **px** é fixo e pode dificultar a leitura para usuários que ajustam o zoom.
+
+## DESAFIO:
+
+Aguarda o carregamento completo do DOM - LINHA 1
+
+Elementos do DOM - LINHAS 5 E 6
+
+Função para exibir mensagem de feedback - LINHA 9
+
+Remove mensagens anteriores - LINHAS 11 a 14
+
+Cria nova mensagem - LINHAS 17 a 20 
+
+Estilos da mensagem - LINHAS 23 a 44
+
+Remove a mensagem após 3 segundos - LINHAS 47 a 52
+
+Função para manipular clique no botão principal - LINHAS 55 e 56
+
+Feedback visual - LINHAS 59 a 62
+
+Exibe mensagem - LINHAS 65 a 67
+
+Função para manipular clique no botão secundário - LINHAS 70 e 71
+
+Feedback visual - LINHAS 73 a 76
+
+Exibe mensagem - LINHA 79
+
+Simula redirecionamento - LINHAS 82 a 85
+
+Adiciona event listeners - LINHAS 88 e 89
+
+Adiciona suporte para teclado (acessibilidade) - LINHAS 92 a 102
+
+Log de inicialização - LINHA 105
+
+Adiciona classe de inicialização para animações - LINHAS 108 e 109 
