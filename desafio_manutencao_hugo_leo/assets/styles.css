@@ -59,7 +59,7 @@ body {
     margin-bottom: 2rem;
 }
 
-*{
+#servicos-titulo {
     font-size: 2rem;
     color: var(--cor-primaria);
     margin-bottom: 1rem;
