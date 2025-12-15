@@ -368,4 +368,6 @@ self.addEventListener('fetch', (event) => {
   );
 });
 ```
+## REM ou PX?
 
+Use **rem** para escalabilidade e acessibilidade (fontes, espaçamentos) e **px** para controle absoluto (bordas finas, imagens fixas), sendo **rem** preferível para design responsivo, pois se adapta ao tamanho da fonte raiz do navegador, enquanto **px** é fixo e pode dificultar a leitura para usuários que ajustam o zoom.
