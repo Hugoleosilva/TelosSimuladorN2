@@ -2,69 +2,71 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Site</title>
-    
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: sans-serif;
-            margin: 0;
-        }
-        .tudo {
-            width: 1000px;
-            background-color: white;
-            margin: 0 auto;
-        }
-        #topo {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .texto-ruim {
-            color: #d1d1d1;
-        }
-        .botoes {
-            padding: 50px;
-            text-align: center;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Empresa XPTO - Soluções Digitais</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
+
 <body>
 
-    <div class="tudo">
-        <div id="topo">
-            <big><h1>Bem-vindo à Empresa XPTO</h1></big>
-            <p>Soluções digitais desde 2000</p>
-        </div>
+    <div class="container">
+        <header class="cabecalho">
+            <h1 class="cabecalho-titulo">Bem-vindo à Empresa XPTO</h1>
+            <p class="cabecalho-subtitulo">Soluções digitais desde 2000</p>
+        </header>
 
-        <div style="padding: 40px; text-align: center;">
-            <h2>Nossos Serviços</h2>
-            <p class="texto-ruim">Este texto tem um contraste muito baixo e é difícil de ler.</p>
-            
-            <img src="https://via.placeholder.com/300" width="300" />
-            
-            <br><br>
-            
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="botoes">
-            <button id="meuBotao" style="padding: 20px; background: red; color: white;" onclick="avisar()">
-                CLIQUE AQUI
-            </button>
-        </div>
-
-        <div id="rodape" style="background: #333; color: white; padding: 10px; text-align: center;">
-            <p>XPTO - Todos os direitos reservados</p>
-        </div>
+        <main class="conteudo-principal">
+            <section class="servicos" aria-labelledby="servicos-titulo">
+                <h2 id="servicos-titulo">Nossos Serviços</h2>
+                <p class="servicos-texto">Oferecemos soluções digitais completas para transformar seu negócio.</p>
+        
+        <div class="servicos-imagem">
+                    <img src="xpto-solucoes-digitais.jpg.png" 
+                         alt="Ilustração representando nossos serviços digitais" title="Ilustração representando nossos serviços digitais"
+                         width="300" height="200">
     </div>
 
-    <script>
-        function avisar() {
-            alert("Você clicou no botão!");
-        }
-    </script>
+        <p class="servicos-descricao">Há mais de duas décadas, transformamos desafios em oportunidades digitais. 
+        Combinamos expertise técnica e visão estratégica para criar soluções personalizadas que impulsionam o seu negócio. 
+        Da concepção à implementação, estamos aqui para construir o seu futuro digital.</p>
 
+           </section>
+
+           <section class="chamada-acao" aria-labelledby="botao-titulo">
+                <h2 id="botao-titulo" class="visually-hidden">Ação Principal</h2>
+                <div class="botoes-container">
+                    <button id="meuBotao" class="botao-principal"> Saiba mais
+                    
+                    </button>
+                    <button id="botaoSecundario" class="botao-secundario">
+                        Contato
+                    </button>
+                </div>
+            </section>
+
+    <section class="chamada-acao" aria-labelledby="botao-titulo">
+                <h2 id="botao-titulo" class="visually-hidden">Ação Principal</h2>
+                <div class="botoes-container">
+                    <button id="meuBotao" class="botao-principal">
+                        Saiba mais
+                    </button>
+                    <button id="botaoSecundario" class="botao-secundario">
+                        Contato
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>XPTO - Todos os direitos reservados © 2025</p>
+            <p class="rodape-info">CNPJ: 01.080.500/0001-20 | Telefone: (81) 98765-4321</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
