@@ -372,40 +372,40 @@ self.addEventListener('fetch', (event) => {
 
 Use **rem** para escalabilidade e acessibilidade (fontes, espaçamentos) e **px** para controle absoluto (bordas finas, imagens fixas), sendo **rem** preferível para design responsivo, pois se adapta ao tamanho da fonte raiz do navegador, enquanto **px** é fixo e pode dificultar a leitura para usuários que ajustam o zoom.
 
-## DESAFIO:
+## DESAFIO - ÍNDICES INDEX.JS:
 
 Aguarda o carregamento completo do DOM - LINHA 1
 
-Elementos do DOM - LINHAS 5 E 6
+Elementos do DOM - LINHAS 3 e 4
 
-Função para exibir mensagem de feedback - LINHA 9
+Função para exibir mensagem de feedback - LINHA 6
 
-Remove mensagens anteriores - LINHAS 11 a 14
+Remove mensagens anteriores - LINHAS 8 a 11
 
-Cria nova mensagem - LINHAS 17 a 20 
+Cria nova mensagem - LINHAS 13 a 16 
 
-Estilos da mensagem - LINHAS 23 a 44
+Estilos da mensagem - LINHAS 18 a 39
 
-Remove a mensagem após 3 segundos - LINHAS 47 a 52
+Remove a mensagem após 3 segundos - LINHAS 41 a 46
 
-Função para manipular clique no botão principal - LINHAS 55 e 56
+Função para manipular clique no botão principal - LINHAS 48 e 49
 
-Feedback visual - LINHAS 59 a 62
+Feedback visual - LINHAS 51 a 54
 
-Exibe mensagem - LINHAS 65 a 67
+Exibe mensagem - LINHAS 56 a 59
 
-Função para manipular clique no botão secundário - LINHAS 70 e 71
+Função para manipular clique no botão secundário - LINHAS 61 e 62
 
-Feedback visual - LINHAS 73 a 76
+Feedback visual - LINHAS 64 a 67
 
-Exibe mensagem - LINHA 79
+Exibe mensagem - LINHA 69
 
-Simula redirecionamento - LINHAS 82 a 85
+Simula redirecionamento - LINHAS 71 a 76
 
-Adiciona event listeners - LINHAS 88 e 89
+Adiciona event listeners - LINHAS 78 e 79
 
-Adiciona suporte para teclado (acessibilidade) - LINHAS 92 a 102
+Adiciona suporte para teclado (acessibilidade) - LINHAS 81 a 91
 
-Log de inicialização - LINHA 105
+Log de inicialização - LINHA 93
 
-Adiciona classe de inicialização para animações - LINHAS 108 e 109 
+Adiciona classe de inicialização para animações - LINHAS 95 e 96
