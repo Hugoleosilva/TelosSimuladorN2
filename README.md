@@ -23,43 +23,34 @@ Você deve refatorar (melhorar) este código seguindo os requisitos do documento
 Boa sorte! 🚀
 
 
-## ÍNDICES - INDEX.JS:
+## ÍNDICES - INDEX.HTML:
 
-Aguarda o carregamento completo do DOM - LINHA 1
+Define o documento HTML5 com metadados, título e links para CSS/fontes - LINHAS 1-8
 
-Elementos do DOM - LINHAS 3-4
+Inicia o corpo da página e define o container principal - LINHAS 9-11
 
-Função para exibir mensagem de feedback - LINHA 6
+Área de título principal da empresa com boas-vindas e slogan - LINHAS 12-16
 
-Remove mensagens anteriores - LINHAS 8-11
+Define a área de conteúdo principal da página - LINHAS 18-19
 
-Cria nova mensagem - LINHAS 13-16 
+Título da seção - LINHA 21
 
-Estilos da mensagem - LINHAS 18-39
+Texto introdutório - LINHA 22
 
-Remove a mensagem após 3 segundos - LINHAS 41-46
+Imagem ilustrativa (com atributos de acessibilidade e dimensões) - LINHAS 24-28 
 
-Função para manipular clique no botão principal - LINHAS 48-49
+Descrição detalhada (histórico da empresa) - LINHAS 30-33 
 
-Feedback visual - LINHAS 51-54
+Título escondido para acessibilidade - LINHA 36
 
-Exibe mensagem - LINHAS 56-59
+Botão principal "Saiba mais" - LINHAS 38-41
 
-Função para manipular clique no botão secundário - LINHAS 61-62
+Botão secundário "Contato" - LINHAS 42-44
 
-Feedback visual - LINHAS 64-67
+Informações de direitos autorais e dados da empresa - LINHAS 47-51
 
-Exibe mensagem - LINHA 69
+Inclui o arquivo JavaScript para funcionalidades interativas - LINHA 53
 
-Simula redirecionamento - LINHAS 71-76
-
-Adiciona event listeners - LINHAS 78-79
-
-Adiciona suporte para teclado (acessibilidade) - LINHAS 81-91
-
-Log de inicialização - LINHA 93
-
-Adiciona classe de inicialização para animações - LINHAS 95-96
 
 ## ÍNDICES - STYLES.CSS
 
@@ -137,30 +128,41 @@ Define animação de entrada para elementos - LINHAS 265-274
 
 Aplica animação fadeIn nas seções de serviços e chamada para ação - LINHAS 276-280
 
-## ÍNDICES - INDEX.HTML:
 
-Define o documento HTML5 com metadados, título e links para CSS/fontes - LINHAS 1-8
+## ÍNDICES - INDEX.JS:
 
-Inicia o corpo da página e define o container principal - LINHAS 9-11
+Aguarda o carregamento completo do DOM - LINHA 1
 
-Área de título principal da empresa com boas-vindas e slogan - LINHAS 12-16
+Elementos do DOM - LINHAS 3-4
 
-Define a área de conteúdo principal da página - LINHAS 18-19
+Função para exibir mensagem de feedback - LINHA 6
 
-Título da seção - LINHA 21
+Remove mensagens anteriores - LINHAS 8-11
 
-Texto introdutório - LINHA 22
+Cria nova mensagem - LINHAS 13-16 
 
-Imagem ilustrativa (com atributos de acessibilidade e dimensões) - LINHAS 24-28 
+Estilos da mensagem - LINHAS 18-39
 
-Descrição detalhada (histórico da empresa) - LINHAS 30-33 
+Remove a mensagem após 3 segundos - LINHAS 41-46
 
-Título escondido para acessibilidade - LINHA 36
+Função para manipular clique no botão principal - LINHAS 48-49
 
-Botão principal "Saiba mais" - LINHAS 38-41
+Feedback visual - LINHAS 51-54
 
-Botão secundário "Contato" - LINHAS 42-44
+Exibe mensagem - LINHAS 56-59
 
-Informações de direitos autorais e dados da empresa - LINHAS 47-51
+Função para manipular clique no botão secundário - LINHAS 61-62
 
-Inclui o arquivo JavaScript para funcionalidades interativas - LINHA 53
+Feedback visual - LINHAS 64-67
+
+Exibe mensagem - LINHA 69
+
+Simula redirecionamento - LINHAS 71-76
+
+Adiciona event listeners - LINHAS 78-79
+
+Adiciona suporte para teclado (acessibilidade) - LINHAS 81-91
+
+Log de inicialização - LINHA 93
+
+Adiciona classe de inicialização para animações - LINHAS 95-96
