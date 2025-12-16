@@ -384,5 +384,5 @@ Responsividade em CSS é a capacidade de um layout se adaptar a diferentes taman
 
 ## MEDIA QUERIES
 
-Media Queries no CSS são uma ferramenta poderosa do CSS3 que permite aplicar estilos diferentes a uma página web com base nas características do dispositivo, como tamanho da tela (largura/altura), orientação (retrato/paisagem) e resolução, tornando sites responsivos e adaptáveis para desktops, tablets e celulares sem mudar o conteúdo. Elas funcionam com a regra @media, que contém condições (media features) para aplicar blocos de CSS específicos, como mudar o layout, tamanho da fonte ou esconder elementos em telas menores.  
+Media Queries no CSS são uma ferramenta poderosa do CSS3 que permite aplicar estilos diferentes a uma página web com base nas características do dispositivo, como tamanho da tela (largura/altura), orientação (retrato/paisagem) e resolução, tornando sites responsivos e adaptáveis para desktops, tablets e celulares sem mudar o conteúdo. Elas funcionam com a regra **@media**, que contém condições (media features) para aplicar blocos de CSS específicos, como mudar o layout, tamanho da fonte ou esconder elementos em telas menores.  
 
