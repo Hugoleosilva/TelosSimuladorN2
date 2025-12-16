@@ -375,3 +375,7 @@ Use **rem** para escalabilidade e acessibilidade (fontes, espaçamentos) e **px*
 ## DOM
 
 O DOM (Document Object Model, ou Modelo de Documento por Objeto) é uma interface de programação que representa documentos HTML ou XML como uma estrutura de árvore, permitindo que scripts como o JavaScript manipulem o conteúdo, a estrutura e o estilo de uma página web. Cada parte do documento (tags, texto, etc.) se torna um "nó" nessa árvore, que pode ser acessado e alterado pelo JavaScript usando o objeto document e seus métodos. 
+
+## RESPONSIVIDADE E MOBILE FIRST
+
+Responsividade em CSS é a capacidade de um layout se adaptar a diferentes tamanhos de tela (celulares, tablets, desktops), e Mobile First é a estratégia de começar o design para telas pequenas (móveis) e, depois, adicionar recursos e complexidade para telas maiores, usando Media Queries, o que resulta em uma experiência mais focada, performática e otimizada para a maioria dos usuários hoje em dia.

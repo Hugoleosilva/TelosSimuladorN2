@@ -63,39 +63,79 @@ Adiciona classe de inicialização para animações - LINHAS 95-96
 
 ## ÍNDICES - STYLES.CSS
 
-Remove margens/paddings padrão e define box-sizing para todos os elementos - LINHAS 1-11
+#### RESET E CONFIGURAÇÕES GERAIS
 
-Define cores principais do site usando CSS custom properties - LINHAS 13-20
+Remove margens/paddings padrão e define box-sizing para todos os elementos - LINHAS 1-5
 
-Configura fonte, cores de fundo/texto e altura mínima da página - LINHAS 22-28
+Define cores principais do site usando CSS custom properties - LINHAS 7-15
 
-Define largura máxima, centralização e sombra da área de conteúdo - LINHAS 30-35
+Configura fonte, cores de fundo/texto e altura mínima da página - LINHAS 17-23
 
-Estiliza o cabeçalho com cores, padding e alinhamento do texto - LINHAS 37-49
+#### LAYOUT PRINCIPAL
 
-Define espaçamento interno da área de conteúdo - LINHAS 51-53
+Define largura máxima, centralização e sombra da área de conteúdo - LINHAS 25-31
 
-Estiliza a seção de serviços com título, texto, imagem e descrição - LINHAS 55-80
+Define espaçamento interno da área de conteúdo - LINHAS 52-54
 
-Cria área destacada para botões de ação com fundo diferenciado - LINHAS 82-86
+#### CABEÇALHO
 
-Organiza botões em coluna (mobile) com espaçamento entre eles - LINHAS 88-93
+Estiliza o cabeçalho com cores, padding e alinhamento do texto - LINHAS 33-38
 
-Estiliza o botão principal (vermelho) com hover effects - LINHAS 95-111
+Estiliza o título principal do cabeçalho - LINHAS 40-44
 
-Estiliza o botão secundário (azul escuro) com hover effects - LINHAS 113-128
+Estiliza o subtítulo do cabeçalho - LINHAS 46-50
 
-Estiliza o rodapé com cores, padding e alinhamento - LINHAS 130-138
+#### SEÇÃO DE SERVIÇOS
 
-Esconde elementos visualmente mantendo-os para leitores de tela - LINHAS 140-148
+Estiliza a seção de serviços com título, texto, imagem e descrição - LINHAS 56-60
 
-Ajusta estilos para telas a partir de 768px (tipografia maior, botões em linha) - LINHAS 150-176
+Estiliza o título da seção de serviços - LINHAS 62-66
 
-Ajustes para telas a partir de 1024px (bordas arredondadas, mais espaçamento) - LINHAS 178-189
+Estiliza o texto descritivo dos serviços - LINHAS 68-75
 
-Define animação de entrada para elementos - LINHAS 191-200
+Configura o container da imagem dos serviços - LINHAS 77-80
 
-Aplica animação fadeIn nas seções de serviços e chamada para ação - LINHAS 202-205
+Estiliza a imagem dos serviços - LINHAS 82-90
+
+Estiliza a descrição detalhada dos serviços - LINHAS 92-98
+
+#### CHAMADA PARA AÇÃO
+
+Cria área destacada para botões de ação com fundo diferenciado - LINHAS 100-105
+
+Organiza botões em coluna (mobile) com espaçamento entre eles - LINHAS 107-113
+
+#### BOTÕES
+
+Estiliza o botão principal (vermelho) com hover effects - LINHAS 115-126
+
+Estiliza o botão secundário (azul escuro) com hover effects - LINHAS 136-154
+
+#### RODAPÉ
+
+Estiliza o rodapé com cores, padding e alinhamento - LINHAS 156-162
+
+#### ACESSIBILIDADE
+
+Esconde elementos visualmente mantendo-os para leitores de tela - LINHAS 170-180
+
+#### RESPONSIVIDADE - MOBILE FIRST
+
+Ajustes específicos para telas pequenas - LINHAS 182-192
+
+#### RESPONSIVIDADE - TABLET
+
+Ajusta estilos para telas a partir de 768px (tipografia maior, botões em linha) - LINHAS 193-224
+
+#### RESPONSIVIDADE - DESKTOP
+
+Ajustes para telas a partir de 1024px (bordas arredondadas, mais espaçamento) - LINHAS 236-264
+
+#### ANIMAÇÕES
+
+Define animação de entrada para elementos - LINHAS 265-274
+
+Aplica animação fadeIn nas seções de serviços e chamada para ação - LINHAS 276-280
 
 ## ÍNDICES - INDEX.HTML:
 
