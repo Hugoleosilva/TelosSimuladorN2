@@ -371,3 +371,7 @@ self.addEventListener('fetch', (event) => {
 ## REM ou PX?
 
 Use **rem** para escalabilidade e acessibilidade (fontes, espaçamentos) e **px** para controle absoluto (bordas finas, imagens fixas), sendo **rem** preferível para design responsivo, pois se adapta ao tamanho da fonte raiz do navegador, enquanto **px** é fixo e pode dificultar a leitura para usuários que ajustam o zoom.
+
+## DOM
+
+O DOM (Document Object Model, ou Modelo de Documento por Objeto) é uma interface de programação que representa documentos HTML ou XML como uma estrutura de árvore, permitindo que scripts como o JavaScript manipulem o conteúdo, a estrutura e o estilo de uma página web. Cada parte do documento (tags, texto, etc.) se torna um "nó" nessa árvore, que pode ser acessado e alterado pelo JavaScript usando o objeto document e seus métodos. 
