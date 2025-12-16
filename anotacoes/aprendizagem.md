@@ -386,3 +386,6 @@ Responsividade em CSS é a capacidade de um layout se adaptar a diferentes taman
 
 Media Queries no CSS são uma ferramenta poderosa do CSS3 que permite aplicar estilos diferentes a uma página web com base nas características do dispositivo, como tamanho da tela (largura/altura), orientação (retrato/paisagem) e resolução, tornando sites responsivos e adaptáveis para desktops, tablets e celulares sem mudar o conteúdo. Elas funcionam com a regra **@media**, que contém condições (media features) para aplicar blocos de CSS específicos, como mudar o layout, tamanho da fonte ou esconder elementos em telas menores.  
 
+## COMO USAR
+
+Para usar **Media Query em CSS**, aplique a diretiva **@media** seguida pelas condições de tela entre parênteses, como **(max-width: 600px)** para telas menores ou **(min-width: 1024px)** para telas maiores. Em seguida, abra chaves {} e escreva as regras CSS que serão aplicadas somente quando as condições forem atendidas. Use **max-width** para estilos em telas pequenas e **min-width** para telas grandes. É possível combinar min-width e max-width com o operador and para criar um intervalo específico, por exemplo, **(min-width: 600px)** and **(max-width: 1024px)**. 
