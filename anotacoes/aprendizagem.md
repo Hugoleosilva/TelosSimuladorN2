@@ -301,6 +301,7 @@ O SW permite que você armazene recursos da sua aplicação (HTML, CSS, JavaScri
 - O SW intercepta o pedido, vê que não há rede e, em vez de mostrar a tela de "Sem Internet", ele serve os arquivos salvos do cache.
 
 ### Resultado: 
+
 Sua aplicação carrega e funciona mesmo sem internet!
 
 2. Notificações Push
@@ -308,6 +309,7 @@ Sua aplicação carrega e funciona mesmo sem internet!
 O SW pode receber mensagens do servidor mesmo quando a aplicação não está aberta no navegador, permitindo que ele exiba notificações push para o usuário.
 
 ### Exemplo: 
+
 Um aplicativo de notícias pode usar um SW para receber um alerta do servidor sobre uma notícia de última hora e exibir uma notificação na tela do usuário, incentivando-o a abrir a aplicação.
 
 3. Sincronização em Segundo Plano (Background Sync)
@@ -383,3 +385,4 @@ Responsividade em CSS é a capacidade de um layout se adaptar a diferentes taman
 ## MEDIA QUERIES
 
 Media Queries no CSS são uma ferramenta poderosa do CSS3 que permite aplicar estilos diferentes a uma página web com base nas características do dispositivo, como tamanho da tela (largura/altura), orientação (retrato/paisagem) e resolução, tornando sites responsivos e adaptáveis para desktops, tablets e celulares sem mudar o conteúdo. Elas funcionam com a regra @media, que contém condições (media features) para aplicar blocos de CSS específicos, como mudar o layout, tamanho da fonte ou esconder elementos em telas menores.  
+
