@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         if (tipo === 'sucesso') {
-            mensagemDiv.style.backgroundColor = '#27ae60';
+            mensagemDiv.style.backgroundColor = '#054e24ff';
         } else if (tipo === 'erro') {
             mensagemDiv.style.backgroundColor = '#e74c3c';
         } else {

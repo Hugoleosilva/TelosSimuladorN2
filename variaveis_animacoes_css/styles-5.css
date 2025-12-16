@@ -28,7 +28,7 @@
         background-color: black;
       }
       50% {
-        background-color: green;
+        background-color: rgb(3, 73, 3);
       }
       100% {
         background-color: red;
